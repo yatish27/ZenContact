@@ -16,6 +16,7 @@ gem 'jbuilder', '~> 2.0'
 gem "haml-rails"
 
 gem 'clearance'
+gem "paperclip", "~> 4.3"
 
 # CSS/JS Vendor gems
 gem 'jquery-rails'

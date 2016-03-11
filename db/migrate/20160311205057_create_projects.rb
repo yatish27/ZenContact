@@ -3,8 +3,8 @@ class CreateProjects < ActiveRecord::Migration[5.0]
     create_table :projects do |t|
       t.string :name
 
-      t.string :input_file_path
-      t.string :output_file_path
+      t.add_attachment :input_file
+      t.add_attachment :output_file
 
       t.references :user
       t.timestamps
