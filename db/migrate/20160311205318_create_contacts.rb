@@ -16,7 +16,7 @@ class CreateContacts < ActiveRecord::Migration[5.0]
       t.hstore :group, array: true
 
       t.string :picture
-      t.string :linkedin_url
+      t.string :linkedin_url, null: false
       t.string :websites, array: true, default: []
       t.string :languages, array: true, default: []
       t.string :skills, array: true, default: []
